@@ -7,12 +7,17 @@
   --primary-iris-color: #4d5ae5;
   --primary-background-color: #fff;
   --secondary-background-color: #2e2f42;
-  --click-color: #2196f3;
+  --click-color: #404bbf;
   --primary-color-slate: #434455;
+  --cornflower-color: #E7E9FC
 }
 
 body {
   font-family: "Roboto", roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 }
 
 /* General Styles */
@@ -51,14 +56,6 @@ body {
   letter-spacing: 0.4px;
 }
 
-.ptext {
-  /* Body */
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -79,32 +76,34 @@ body {
 .header-logo-link {
   text-decoration: none;
   font-size: 30px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   line-height: 1.5px;
 }
 
 .weblogo {
   color: var(--primary-iris-color);
 }
-.studiologon {
-  color: var(--primary-navy-color);
-}
 
 .header-link {
-  color: var(--primary-navy-color);
+  color: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
-.header-item .header-link:hover,
-.header-item .header-link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--click-color);
 }
 
 .header-contacts {
-  color: var(--primary-navy-color);
+  color: #4d5ae5;
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--click-color);
 }
 
 .hero {
@@ -117,7 +116,7 @@ body {
 
 .hero-button {
   cursor: pointer;
-  border-color: transparent;
+  border: none;
   letter-spacing: 0.05em;
   background-color: var(--primary-iris-color);
   color: var(--primary-background-color);
@@ -125,24 +124,8 @@ body {
 
 .hero-button.button:hover,
 .hero-button.button :focus {
-  background-color: var(--primary-white-color);
-  color: var(--primary-iris-color);
-}
-.studiologow {
-  color: var(--primary-cloud-color);
-}
-
-.footer {
-  background-color: var(--primary-navy-color);
-}
-
-.footer-text {
-  color: var(--primary-cloud-color);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  background-color: var(--primary-iris-color);
+  color: var(--primary-white-color);
 }
 
 .footer-logo {
@@ -152,28 +135,41 @@ body {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
+  color: var(--primary-cloud-color);
+}
+
+.footer {
+  background-color: var(--primary-navy-color);
+}
+
+.footer-text {
+  color: var(--primary-cloud-color);
 }
 
 /* Portolio Page */
 .button-item {
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  border: 1px solid var(--cornflower-color) ;
   color: var(--primary-iris-color);
   text-align: center;
   border-radius: 4px;
-  background: var(--primary-cloud-color);
+  background-color: var(--primary-cloud-color);
+  cursor: pointer;
 }
 
 .button-item:hover,
 .button-item:focus {
-  background-color: var(--primary-iris-color);
+  background-color: var(--click-color);
   color: var(--primary-white-color);
+  box-shadow: box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  border-color: var(--primary-iris-color);
 }
 
-.image-item {
+.portfolio-image-item {
   text-decoration: none;
 }
 
