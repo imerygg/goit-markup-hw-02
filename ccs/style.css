@@ -13,11 +13,13 @@
 }
 
 body {
-  font-family: "Roboto", roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  color: var(--primary-navy-color);
+  font-style: normal;
 }
 
 /* General Styles */
@@ -75,13 +77,19 @@ body {
 
 .header-logo-link {
   text-decoration: none;
-  font-size: 30px;
   font-family: "Raleway";
-  line-height: 1.5px;
+  color: inherit;
+  font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 21px;
+letter-spacing: 0.54px;
+text-transform: uppercase;
 }
 
 .weblogo {
   color: var(--primary-iris-color);
+
 }
 
 .header-link {
@@ -97,13 +105,14 @@ body {
   color: var(--click-color);
 }
 
-.header-contacts {
-  color: #4d5ae5;
-}
-
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--click-color);
+}
+
+.header-contacts {
+color: inherit;
+
 }
 
 .hero {
@@ -120,12 +129,18 @@ body {
   letter-spacing: 0.05em;
   background-color: var(--primary-iris-color);
   color: var(--primary-background-color);
+  border-radius: 4px;
+
 }
 
 .hero-button.button:hover,
 .hero-button.button :focus {
   background-color: var(--primary-iris-color);
   color: var(--primary-white-color);
+}
+
+.section-grey {
+  background-color: var(--primary-cloud-color);
 }
 
 .footer-logo {
@@ -162,7 +177,7 @@ body {
 }
 
 .button-item:hover,
-.button-item:focus {
+.button-item:focus .active-filter {
   background-color: var(--click-color);
   color: var(--primary-white-color);
   box-shadow: box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
